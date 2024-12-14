@@ -1,0 +1,10 @@
+RS485 message template: 
+    - [2 digits - Sender ID]:[2 digits - Receiver ID]:[2 digits - Message code]:[? digits - Message data]:[2 digits - Checksum]
+
+ * ID: 
+    - center: 90
+    - arm: 01 - 20
+    - conveyor speed: 50
+* Message data: [Msg code][Msg Data]
+    + Msg code:
+        -
