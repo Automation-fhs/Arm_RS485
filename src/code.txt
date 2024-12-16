@@ -6,5 +6,32 @@ RS485 message template:
     - arm: 01 - 20
     - conveyor speed: 50
 * Message data: [Msg code][Msg Data]
-    + Msg code:
-        -
+    + Msg code - Msg data: 
+        - 01: Arm method
+            + 01: Arm open
+            + 00: Arm close
+            + 02: Arm lock
+            + 03: Arm unlock
+        - 02: Test/Init method
+            + 01: Arm init
+            + 02: Arm home find
+            + 03: Arm test mode
+            + 04: Arm open then close
+
+
+
+
+
+
+
+
+RS485 message read code:
+
+0xFF: successfully read
+0xF0: not from center
+0xF1: not receiver
+
+0x00: no incoming message
+0x10: checksum failed
+0x50: message format error
+0x51: message data error
