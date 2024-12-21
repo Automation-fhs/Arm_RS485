@@ -16,13 +16,12 @@ RS485 message template:
             + 01: Arm init
             + 02: Arm home find
             + 03: Arm test mode
-            + 04: Arm open then close
-
-
-
-
-
-
+            + 04: Arm communicate test
+            + 05: Arm open/close test
+            + 06: Arm all sensor test
+        - 1x: Set; 2x: Get
+            + x0: Address
+            + x1:
 
 
 RS485 message read code:
